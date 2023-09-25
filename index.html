@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- STYLE.CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- TITLE -->
+    <title>Geraldi Axel Portfolio</title>
+</head>
+<body>
+    <h1 class="offscreen">Geraldi Axel's Website</h1>
+
+    <header class="header">
+        <a href="/" class="header-logo">
+            <img src="img/logo.png" alt="" width="120">
+        </a>
+
+        <a href="#contact" class="header-contact">
+            Contact Me
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="1.2rem">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+            </svg>              
+        </a>
+
+        <nav class="header-nav">
+            <h1 class="offscreen">Navigation</h1>
+            <ul class="header-nav-list">
+                <a href="/" class="active">Home</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-col hero-image-col">
+                <picture class="hero-image">
+                    <img src="img/hero.png" alt="illustration of me coding" width="550">
+                </picture>
+            </div>
+            <div class="hero-col">
+                <div class="hero-about">
+                    <h2 class="hero-about__subheading">Hello!</h2>
+                    <h2 class="hero-about__subheading">I'm <span class="text-yellow">Geraldi Axel.</span></h2>
+                    <p class="hero-about__body">I'm currently a 5th semester student enrolled at BINUS University, with a passion for the world of coding and knowledge through learning by doing. I'm passionate in developing softwares, with a particular focus on web development.</p>
+                    <div>
+                        <a href="#projects" class="button button--primary button--icon">
+                            View Projects
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="1.2rem">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div>
+        <a href="#contact" class="marquee">
+            <div class="marquee__items">
+                <div>* Lets get to work!</div>
+                <div>* Have an opportunity in mind?</div>
+                <div>* Lets get to work!</div>
+                <div>* Have an opportunity in mind?</div>
+                <div>* Lets get to work!</div>
+                <div>* Have an opportunity in mind?</div>
+            </div>
+            <div class="marquee__items" aria-hidden="true">
+                <div>* Lets get to work!</div>
+                <div>* Have an opportunity in mind?</div>
+                <div>* Lets get to work!</div>
+                <div>* Have an opportunity in mind?</div>
+                <div>* Lets get to work!</div>
+                <div>* Have an opportunity in mind?</div>
+            </div>
+        </a>
+    </div>
+    
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Projects</h1>
+            </div>
+            <div class="selected-project snaps-inline">
+                <!-- Project Card -->
+                <a href="https://techno.himtibinus.or.id/" class="selected-project-card" target="_blank">
+                    <div class="selected-project-card__header">
+<div class="red-circle"></div>
+                        <div class="orange-circle"></div>
+                        <div class="green-circle"></div>
+                    </div>
+                    <div class="selected-project-card__image">
+                        <img src="img/portfolio-techno.png" alt="a photo of my project for the techno event" loading="lazy">
+                    </div>
+                    <div class="selected-project-card__title">
+                        <div>
+                            <span>TECHNO 2023</span>
+                            <span>&#9679; Organization Project</span>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="2rem">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                        </svg>
+                    </div>
+                    <div class="selected-project-card__desc">
+                        <p>A front-end website for the HIMTI BINUS-hosted TECHNO 2023 student welcoming event. The website was built using a combination of HTML, CSS, JavaScript, and Bootstrap.</p>
+                    </div>
+                </a>
+                <!-- Project Card -->
+                <a href="https://www.techfest2023.himtibinus.or.id/" class="selected-project-card" target="_blank">
+                    <div class="selected-project-card__header">
+<div class="red-circle"></div>
+                        <div class="orange-circle"></div>
+                        <div class="green-circle"></div>
+                    </div>
+                    <div class="selected-project-card__image">
+                        <img src="img/portfolio-techfest.png" alt="a photo of my project for the techfest event" loading="lazy">
+                    </div>
+                    <div class="selected-project-card__title">
+                        <div>
+                            <span>TECHFEST 2023</span>
+                            <span>&#9679; Organization Project</span>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="2rem">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                        </svg>
+                    </div>
+                    <div class="selected-project-card__desc">
+                        <p>A front-end website for the TECHFEST 2023 seminar and competition event held by HIMTI BINUS. The website was built using a combination of HTML, CSS, JavaScript, and Bootstrap.</p>
+                    </div>
+                </a>
+                <!-- Project Card -->
+                <a href="https://hishot2022.netlify.app/" class="selected-project-card" target="_blank">
+                    <div class="selected-project-card__header">
+<div class="red-circle"></div>
+                        <div class="orange-circle"></div>
+                        <div class="green-circle"></div>
+                    </div>
+                    <div class="selected-project-card__image">
+                        <img src="img/portfolio-hishot.png" alt="a photo of my project for the hishot 2022 event" loading="lazy">
+                    </div>
+                    <div class="selected-project-card__title">
+                        <div>
+                            <span>HISHOT 2022</span>
+                            <span>&#9679; Organization Project</span>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="2rem">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                        </svg>
+                    </div>
+                    <div class="selected-project-card__desc">
+                        <p>A front-end website for the TECHFEST 2023 workshop and study tour event held by HIMTI BINUS. The website was built using a combination of HTML, CSS, JavaScript, and Bootstrap.</p>
+                    </div>
+                </a>
+                <!-- Project Card -->
+                <a href="#" class="selected-project-card" target="_blank">
+                    <div class="selected-project-card__header">
+<div class="red-circle"></div>
+                        <div class="orange-circle"></div>
+                        <div class="green-circle"></div>
+                    </div>
+                    <div class="selected-project-card__image">
+                        <img src="img/portfolio-waqi.png" alt="a photo of my project for the air quality checker" loading="lazy">
+                    </div>
+                    <div class="selected-project-card__title">
+                        <div>
+                            <span>AirQuality Checker</span>
+                            <span>&#9679; Personal Project</span>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="2rem">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                        </svg>
+                    </div>
+                    <div class="selected-project-card__desc">
+                        <p>A web-application built to fetch real-time air quality data for cities around the world. Implemented using Google Maps and an external API (waqi.info), designed and styled with EJS, CSS, JavaScript.</p>
+                    </div>
+                </a>
+                <!-- Project Card -->
+                <a href="https://hishot2022.netlify.app/" class="selected-project-card" target="_blank">
+                    <div class="selected-project-card__header">
+<div class="red-circle"></div>
+                        <div class="orange-circle"></div>
+                        <div class="green-circle"></div>
+                    </div>
+                    <div class="selected-project-card__image">
+                        <img src="img/portfolio-notes.png" alt="a photo of my project for the notes webapp" loading="lazy">
+                    </div>
+                    <div class="selected-project-card__title">
+                        <div>
+                            <span>Notes WebApp</span>
+                            <span>&#9679; Personal Project</span>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="2rem">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                        </svg>
+                    </div>
+                    <div class="selected-project-card__desc">
+                        <p>A full-stack web application for taking notes online. This personal project is built so that I can better learn how to develop a fullstack website using NodeJS, Express, MongoDB, EJS.</p>
+                    </div>
+                </a>
+                <!-- Project Card -->
+                <a href="https://hishot2022.netlify.app/" class="selected-project-card" target="_blank">
+                    <div class="selected-project-card__header">
+<div class="red-circle"></div>
+                        <div class="orange-circle"></div>
+                        <div class="green-circle"></div>
+                    </div>
+                    <div class="selected-project-card__image">
+                        <img src="img/portfolio-cart.jpg" alt="a photo of my project for the canteencart application" loading="lazy">
+                    </div>
+                    <div class="selected-project-card__title">
+                        <div>
+                            <span>CanteenCart</span>
+                            <span>&#9679; Course Final Project</span>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="2rem">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                        </svg>
+                    </div>
+                    <div class="selected-project-card__desc">
+                        <p>A full-stack food ordering mobile application for ordering food in the campus' canteen for the Software Engineering Course final project. This project is built using Dart, Flutter, and Firebase.</p>
+                    </div>
+                </a>
+                <!-- Project Card -->
+                <a href="https://hishot2022.netlify.app/" class="selected-project-card" target="_blank">
+                    <div class="selected-project-card__header">
+<div class="red-circle"></div>
+                        <div class="orange-circle"></div>
+                        <div class="green-circle"></div>
+                    </div>
+                    <div class="selected-project-card__image">
+                        <img src="img/portfolio-bookit.png" alt="a photo of my project for the canteencart application" loading="lazy">
+                    </div>
+                    <div class="selected-project-card__title">
+                        <div>
+                            <span>BookIt</span>
+                            <span>&#9679; Course Final Project</span>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="2rem">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                        </svg>
+                    </div>
+                    <div class="selected-project-card__desc">
+                        <p>A full-stack web-based bookstore application, for the final project of Pattern Software Design Course built using C# and ASP.NET utilizing pattern software design methods.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="skills">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Skills</h1>
+            </div>
+            <div class="skills-grid">
+                <div class="services-grid__col">
+                    <div class="skill-card">
+                        <div class="skill-card__image">
+                            <img src="img/html.png" alt="">
+                        </div>
+                        <div class="skill-card__title">
+                            <h3>HTML</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-grid__col">
+                    <div class="skill-card">
+                        <div class="skill-card__image">
+                            <img src="img/css.png" alt="">
+                        </div>
+                        <div class="skill-card__title">
+                            <h3>CSS</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-grid__col">
+                    <div class="skill-card">
+                        <div class="skill-card__image">
+                            <img src="img/js.png" alt="">
+                        </div>
+                        <div class="skill-card__title">
+                            <h3>JavaScript</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-grid__col">
+                    <div class="skill-card">
+                        <div class="skill-card__image">
+                            <img src="img/bootstrap.png" alt="">
+                        </div>
+                        <div class="skill-card__title">
+                            <h3>Bootstrap</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-grid">
+                <div class="services-grid__col">
+                    <div class="skill-card">
+                        <div class="skill-card__image">
+                            <img src="img/nodejs.png" alt="">
+                        </div>
+                        <div class="skill-card__title">
+                            <h3>Node.js</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-grid__col">
+                    <div class="skill-card">
+                        <div class="skill-card__image">
+                            <img src="img/express.png" alt="">
+                        </div>
+                        <div class="skill-card__title">
+                            <h3>Express.js</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-grid__col">
+                    <div class="skill-card">
+                        <div class="skill-card__image">
+                            <img src="img/mongodb.svg" alt="">
+                        </div>
+                        <div class="skill-card__title">
+                            <h3>MongoDB</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-grid__col">
+                    <div class="skill-card">
+                        <div class="skill-card__image">
+                            <img src="img/laravel.png" alt="">
+                        </div>
+                        <div class="skill-card__title">
+                            <h3>Laravel</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div>
+                    <h1>Contact</h1>
+                    <p>Hi! I'm Axel, a college student from BINUS University. With a few semesters of learning Computer Science, I've learned about programming, software development, as well as participated in multiple organization events.</p>
+                    <p>I mainly focus on web development, which fits my experience and interests. In my free time I like to build personal projects and learn new languages/frameworks to become the best developer I can.</p>
+
+                    <p><b>Find me on:</b></p>
+                    <ul class="socials">
+                        <li>
+                            <a href="https://www.linkedin.com/in/geraldi-axel" target="_blank" rel="noopener noreferrer">
+                                <img src="img/icons8-linkedin-50.png" alt="">
+                                LinkedIn
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/GeraldiAxel" target="_blank" rel="noopener noreferrer">
+                                <img src="img/icons8-github-50.png" alt="">
+                                GitHub
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <form action="" class="contact-form" method="POST">
+
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <a href="/" class="footer-logo">
+            <img src="img/logo.png" alt="" width="120">
+        </a>
+
+        <a href="#contact" class="footer-contact">
+            Contact Me
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="1.2rem">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+            </svg>              
+        </a>
+
+        <div class="footer-copyright">
+            &copy; 2023 Geraldi Axel &#9679; Built with HTML and CSS &#9679; Hosted on GitHub
+        </div>
+    </footer>
+    <!-- <section style="padding-top: 9rem;"></section> -->
+    
+</body>
+</html>
