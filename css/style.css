@@ -76,6 +76,16 @@ input, textarea {
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar{
+    height: 20px;
+    width: 20px;
+    background: gray;
+}
+::-webkit-scrollbar-thumb{
+    background: var(--color-yellow);
+    border: 2px solid var(--color-black);
+}
+
 /* responsive text */
 @media (min-width: 1024px) {
     h1 {
@@ -106,8 +116,8 @@ input, textarea {
 }
 
 .container {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
 }
 
 /* responsive custom container */
@@ -156,9 +166,6 @@ input, textarea {
     grid-template-areas: 
     "logo contact"
     "menu menu";
-    position: fixed;
-    top: 0;
-    width: 100%;
     z-index: 100;
 }
 
