@@ -86,7 +86,7 @@ input, textarea {
     border-top: 2px solid var(--color-black);
     border-bottom: 2px solid var(--color-black);
 }
-
+/*  */
 /* responsive text */
 @media (min-width: 1024px) {
     h1 {
