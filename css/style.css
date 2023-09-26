@@ -83,7 +83,8 @@ input, textarea {
 }
 ::-webkit-scrollbar-thumb{
     background: var(--color-yellow);
-    border: 2px solid var(--color-black);
+    border-top: 2px solid var(--color-black);
+    border-bottom: 2px solid var(--color-black);
 }
 
 /* responsive text */
@@ -167,6 +168,7 @@ input, textarea {
     "logo contact"
     "menu menu";
     z-index: 100;
+    padding: 0;
 }
 
 .header-logo {
@@ -199,6 +201,9 @@ input, textarea {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1rem;
+    /* padding: 0; */
+    /* overflow: hidden; */
 }
 
 .header-nav-list{
@@ -213,15 +218,15 @@ input, textarea {
 .header-nav-list a{
     text-decoration: none;
     position: relative;
-    padding: 0.4rem 1rem;
+    padding: 0.4rem 0.2rem;
+    font-size: 1rem;
     margin: 0;
     display: block;
+    height: 100%;
 }
 
 .header-nav-list a:hover {
-    background-color: var(--color-yellow-hover);
-    border-left: 2px solid var(--color-black);
-    border-right: 2px solid var(--color-black);
+    color: var(--color-yellow-hover);
 }
 
 /* .header-nav-list a.active::before {
@@ -234,10 +239,16 @@ input, textarea {
         grid-template-columns: 180px 1fr 180px;
         grid-template-areas: 
         "logo menu contact";
+        font-size: 1rem;
     }
 
     .header-nav {
         border-top: 0;
+    }
+
+    .header-nav-list a{
+        padding: 0.4rem 1.2rem;
+        font-size: 1.1rem;
     }
 
     .header-contact {
