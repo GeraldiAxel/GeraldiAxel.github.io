@@ -156,6 +156,10 @@ input, textarea {
     grid-template-areas: 
     "logo contact"
     "menu menu";
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
 }
 
 .header-logo {
@@ -192,7 +196,7 @@ input, textarea {
 .header-nav-list{
     list-style-type: none;
     margin: 0;
-    padding: 0 0.7rem;
+    padding: 0 1cm;
     display: flex;
     gap: 1.2rem;
     overflow-y: auto;
@@ -201,14 +205,21 @@ input, textarea {
 .header-nav-list a{
     text-decoration: none;
     position: relative;
-    padding: 0.4rem 0;
+    padding: 0.4rem 1rem;
+    margin: 0;
     display: block;
 }
 
-.header-nav-list a.active::before {
+.header-nav-list a:hover {
+    background-color: var(--color-yellow-hover);
+    border-left: 2px solid var(--color-black);
+    border-right: 2px solid var(--color-black);
+}
+
+/* .header-nav-list a.active::before {
     content: "*";
     color: var(--color-yellow);
-}
+} */
 
 @media (min-width: 768px) {
     .header {
