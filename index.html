@@ -363,8 +363,22 @@
                         </li>
                     </ul>
                 </div>
-                <form action="" class="contact-form" method="POST">
-
+                <form action="https://formspree.io/f/mdorwrkq" class="contact-form" method="POST">
+                    <div>
+                        <label for="name">Your Name</label>
+                        <input name="name" id="name" type="text" required>
+                    </div>
+                    <div>
+                        <label for="email">Your Email</label>
+                        <input name="email" id="email" type="email" required>
+                    </div>
+                    <div>
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" spellcheck="true"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" class="button button--contact" value="Send It!">
+                    </div>
                 </form>
             </div>
         </div>

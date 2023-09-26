@@ -61,6 +61,21 @@ h3 {
     font-size: 1.566rem;
 }
 
+label {
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+    display: block;
+}
+
+input, textarea {
+    width: 100%;
+    border: 2px solid var(--color-black);
+    padding: 0.8rem 0.7rem;
+    border-radius: 0.25rem;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
 /* responsive text */
 @media (min-width: 1024px) {
     h1 {
@@ -283,6 +298,7 @@ h3 {
 
 .button--primary:hover {
     background-color: var(--color-green-hover);
+    border: 2px solid var(--color-black);
 }
 
 /* Marquee */
@@ -608,11 +624,13 @@ h3 {
 .contact {
     padding: 4rem 0;
     border-bottom: 2px solid var(--color-black);
+    background-color: var(--color-yellow);
 }
 
 .contact-grid {
     display: grid;
     gap: 2rem;
+    
 }
 
 .socials {
@@ -640,4 +658,20 @@ h3 {
     .contact-grid {
         grid-template-columns: 1fr 1fr;
     }
+}
+
+
+.button--contact {
+    background-color: var(--color-green);
+    color: var(--color-white);
+    transition: 0.2s all ease-in-out;
+    padding: 0.8rem 0;
+}
+
+.button--contact:hover {
+    background-color: var(--color-green-hover);
+    border: 2px solid var(--color-black);
+    filter: drop-shadow(2px 2px 0 rgba(0,0,0,1));
+    transform: translate(-2px, -2px);
+    cursor: pointer;
 }
