@@ -86,6 +86,26 @@ input, textarea {
     border-top: 2px solid var(--color-black);
     border-bottom: 2px solid var(--color-black);
 }
+
+.hidden {
+    opacity: 0;
+    transition: all 0.8s;
+    filter: blur(1px);
+    transform: translateX(-20%);
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .hidden {
+        transition: all 0.8s;
+    }
+}
+
 /*  */
 /* responsive text */
 @media (min-width: 1024px) {
@@ -268,6 +288,10 @@ input, textarea {
         display: flex;
         flex-direction: row-reverse;
         gap: 2.5rem;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+        /* background-color: #02343f; */
     }
 }
 
@@ -480,7 +504,7 @@ input, textarea {
         grid-template-rows: min-content;
         margin: 1rem;
         margin-bottom: 2rem;
-        transition: all 0.1s ease-in-out;
+        /* transition: all 0.1s ease-in-out; */
     }
 
     .snaps-inline {
@@ -541,7 +565,7 @@ input, textarea {
 
 .skill-card {
     text-decoration: none;
-    transition: all 0.1s ease-in-out;
+    /* transition: all 0.1s ease-in-out; */
     margin-bottom: 2rem;
     width: 300px;
 }
@@ -603,7 +627,6 @@ input, textarea {
 
     .skill-card {
         text-decoration: none;
-        transition: all 0.1s ease-in-out;
         margin-bottom: 2rem;
         width: 20%;
     }
@@ -612,7 +635,6 @@ input, textarea {
 @media (max-width: 400px) {
     .skill-card {
         text-decoration: none;
-        transition: all 0.1s ease-in-out;
         margin-bottom: 2rem;
         width: 220px;
     }
